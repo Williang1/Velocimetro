@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Container Central -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VELOCIDADE"
+            android:textColor="#00FF66"
+            android:textSize="18sp"
+            android:letterSpacing="0.2"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Display Digital (3 Dígitos em Verde Neon) -->
+        <TextView
+            android:id="@+id/tvVelocidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000"
+            android:textColor="#00FF66"
+            android:textSize="110sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-monospace"
+            android:shadowColor="#00FF66"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"/>
+
+        <!-- Unidade de Medida -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KM/H"
+            android:textColor="#00FF66"
+            android:textSize="28sp"
+            android:letterSpacing="0.15"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Indicador do GPS no Rodapé -->
+    <TextView
+        android:id="@+id/tvStatusGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Aguardando sinal do GPS..."
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
